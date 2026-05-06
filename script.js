@@ -8,6 +8,34 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// ========== MOBILE NAV TOGGLE ==========
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+
+if (navToggle && navLinks) {
+  const closeMenu = () => {
+    navToggle.classList.remove('open');
+    navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  };
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  // Close menu when a link is tapped
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Close menu if user resizes back to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) closeMenu();
+  });
+}
+
 // ========== GENERIC REVEAL OBSERVER ==========
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
