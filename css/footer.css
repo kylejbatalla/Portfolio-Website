@@ -1,0 +1,8 @@
+/* ========== FOOTER ========== */
+footer {
+  padding: 40px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 13px;
+}

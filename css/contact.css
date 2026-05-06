@@ -1,0 +1,41 @@
+/* ========== CONTACT ========== */
+.contact {
+  padding: 140px 40px;
+  text-align: center;
+  background: radial-gradient(ellipse at center, rgba(10, 132, 255, 0.1) 0%, transparent 60%),
+              var(--bg);
+}
+
+.contact h2 {
+  font-size: clamp(48px, 7vw, 96px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin-bottom: 24px;
+}
+
+.contact p {
+  color: var(--text-dim);
+  font-size: 20px;
+  max-width: 580px;
+  margin: 0 auto 40px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 48px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  color: var(--text-dim);
+  font-size: 15px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-item:hover {
+  color: var(--accent);
+}

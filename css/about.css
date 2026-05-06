@@ -1,0 +1,33 @@
+/* ========== STICKY ABOUT (Apple-like word reveal) ========== */
+.about {
+  height: 200vh;
+  position: relative;
+}
+
+.about-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about-text {
+  text-align: center;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.about-text h2 {
+  font-size: clamp(40px, 6vw, 88px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.about-text h2 span {
+  display: inline-block;
+  transition: color 0.3s ease;
+}

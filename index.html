@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kyle Batalla — Freelance Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- Section-based CSS files -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/meet.css">
+<link rel="stylesheet" href="css/services.css">
+<link rel="stylesheet" href="css/stats.css">
+<link rel="stylesheet" href="css/skills.css">
+<link rel="stylesheet" href="css/experience.css">
+<link rel="stylesheet" href="css/projects.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+<!-- ========== NAV ========== -->
+<nav id="nav">
+  <div class="logo">Kyle<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Contact me</a>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="hero-content">
+    <div class="hero-tag"><span class="dot"></span>Available for web development projects</div>
+    <h1>
+      From ideas to<br />
+      <span class="gradient">reliable software solutions.</span>
+    </h1>
+    <p>Current freelance and government contracting software engineer, crafting fast, reliable applications and websites. 
+      Based in Monterey Bay.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">Contact me →</a>
+      <a href="#projects" class="btn btn-secondary">View work</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">Scroll</div>
+</section>
+
+<!-- ========== ABOUT (sticky reveal) ========== -->
+<section class="about">
+  <div class="about-sticky">
+    <div class="about-text">
+      <h2 id="aboutText">
+        <span data-reveal>I've</span>
+        <span data-reveal>build</span>
+        <span data-reveal>products</span>
+        <span data-reveal>that</span>
+        <span data-reveal>are</span>
+        <span data-reveal>scalable</span>
+        <span data-reveal>and</span>
+        <span data-reveal>efficient</span>
+        <span data-reveal>—</span>
+        <span data-reveal>seen</span>
+        <span data-reveal>by's</span>
+        <span data-reveal>millions</span>
+        <span data-reveal>of</span>
+        <span data-reveal>users</span>
+        <span data-reveal>around</span>
+        <span data-reveal>the</span>
+        <span data-reveal>world</span>
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MEET KYLE (photo section) ========== -->
+<section class="meet" id="about">
+  <div class="container meet-grid">
+    <div class="meet-photo reveal">
+      <img src="resources\profile.jpg" alt="Kyle Batalla" onerror="this.style.display='none'; this.parentElement.classList.add('photo-fallback');" />
+      <div class="photo-fallback-content">
+        <div class="photo-fallback-icon">📸</div>
+        <div class="photo-fallback-text">Drop your photo here<br /><span>Replace <code>profile.jpg</code> in this folder</span></div>
+      </div>
+    </div>
+    <div class="meet-content reveal reveal-delay-1">
+      <span class="section-label">About me</span>
+      <h2 class="section-title">Engineer.<br />Problem-solver.<br />Outdoor junkie.</h2>
+      <p class="meet-bio">
+        Hi, I'm Kyle — Salinas, California native, UC San Diego graduate, and software engineer with 3+ years experience.
+        I believes ideas are cheap and execution is expensive—and I enjoy the process of engineering ideas into reality.
+      </p>
+      <p class="meet-bio">
+        When I'm not coding, you'll find me overlanding in my 2008 Toyota Fj Cruiser, shooting photography, and travelling the world with my girlfriend.
+      </p>
+      <div class="meet-meta">
+        <div class="meta-item">
+          <div class="meta-label">Based in</div>
+          <div class="meta-value">Monterey Bay, CA</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Education</div>
+          <div class="meta-value">UC San Diego</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Degree</div>
+          <div class="meta-value">Bachelor's of Science: Computer Science</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICES ========== -->
+<section id="services">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">What I do</span>
+      <h2 class="section-title">Built end-to-end.<br />Backed by 3+ years shipping.</h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">⚡</div>
+        <h3>Web Development</h3>
+        <p>Custom javascript based websites. Fast, accessible, search engine optimization (SEO) ready.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">📱</div>
+        <h3>Mobile Apps</h3>
+        <p>Android development with Java/Kotlin. MVVM architecture, performance tuning, and clean UX patterns.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">🛠</div>
+        <h3>Native Applications</h3>
+        <p>Java client-side support, APIs, data pipelines, internal tools, and CI/CD automation. Built using SOLID and OOP principles.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon">🎨</div>
+        <h3>UI / UX Design</h3>
+        <p>Figma-to-code workflows, wireframing, and design system implementation. Pixel-perfect, every time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STATS
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="stat-number">200M+</div>
+        <div class="stat-label">Daily users reached</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">50%</div>
+        <div class="stat-label">Performance gains delivered</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">10+</div>
+        <div class="stat-label">Languages & frameworks</div>
+      </div>
+    </div>
+  </div>
+</section> ========== -->
+
+<!-- ========== SKILLS MARQUEE ========== -->
+<section class="skills">
+  <div class="container reveal" style="margin-bottom: 60px;">
+    <span class="section-label">Tech stack</span>
+    <h2 class="section-title">Tools of the trade.</h2>
+  </div>
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <div class="skill-pill">Java</div>
+      <div class="skill-pill">Kotlin</div>
+      <div class="skill-pill">Python</div>
+      <div class="skill-pill">JavaScript</div>
+      <div class="skill-pill">React</div>
+      <div class="skill-pill">Tailwind CSS</div>
+      <div class="skill-pill">C++</div>
+      <div class="skill-pill">SQL</div>
+      <div class="skill-pill">HTML / CSS</div>
+      <div class="skill-pill">Ruby</div>
+      <div class="skill-pill">Bash</div>
+      <div class="skill-pill">Java</div>
+      <div class="skill-pill">Kotlin</div>
+      <div class="skill-pill">Python</div>
+      <div class="skill-pill">JavaScript</div>
+      <div class="skill-pill">React</div>
+      <div class="skill-pill">Tailwind CSS</div>
+      <div class="skill-pill">C++</div>
+      <div class="skill-pill">SQL</div>
+      <div class="skill-pill">HTML / CSS</div>
+      <div class="skill-pill">Ruby</div>
+      <div class="skill-pill">Bash</div>
+    </div>
+  </div>
+
+  <div class="marquee" style="margin-top: 24px;">
+    <div class="marquee-track marquee-track-2">
+      <div class="skill-pill">RxJava</div>
+      <div class="skill-pill">Dagger2</div>
+      <div class="skill-pill">PyTorch</div>
+      <div class="skill-pill">TensorFlow</div>
+      <div class="skill-pill">Pandas</div>
+      <div class="skill-pill">Jenkins</div>
+      <div class="skill-pill">Google Cloud Platform</div>
+      <div class="skill-pill">Git</div>
+      <div class="skill-pill">Figma</div>
+      <div class="skill-pill">Android Studio</div>
+      <div class="skill-pill">Linux</div>
+      <div class="skill-pill">RxJava</div>
+      <div class="skill-pill">Dagger2</div>
+      <div class="skill-pill">PyTorch</div>
+      <div class="skill-pill">TensorFlow</div>
+      <div class="skill-pill">Pandas</div>
+      <div class="skill-pill">Jenkins</div>
+      <div class="skill-pill">Google Cloud Platform</div>
+      <div class="skill-pill">Git</div>
+      <div class="skill-pill">Figma</div>
+      <div class="skill-pill">Android Studio</div>
+      <div class="skill-pill">Linux</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EXPERIENCE TIMELINE ========== -->
+<section class="experience" id="experience">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Experience</span>
+      <h2 class="section-title">Track record.</h2>
+      <p class="section-subtitle">Detailed resume available upon request.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">MAY 2026 — PRESENT</div>
+        <h3>Freelance Web Developer</h3>
+        <div class="company">Self-Employed</div>
+        <ul>
+          <li>Specialize in web development for small businesses</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">MAY 2025 — PRESENT</div>
+        <h3>Software Engineer</h3>
+        <div class="company">Valkyrie Enterprises LLC</div>
+        <ul>
+          <li>Active Java developer, developing features for an interactive war-gaming simulator, <br>
+            JTLS-GO (Joint Theater Level Simulation - Global Operations) utilized by US DOD, NATO, and US allies.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">JUNE 2024 — OCTOBER 2024</div>
+        <h3>Software Engineer Intern</h3>
+        <div class="company">Valkyrie Enterprises LLC</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">AUG 2022 — NOV 2023</div>
+        <h3>Software Engineer</h3>
+        <div class="company">Snap Inc.</div>
+        <ul>
+          <li> Served as an Android developer on various teams including Camera team and Spectacles OS team for <br>
+            the Snapchat application on Android with up to 200 million+ daily active users.</li>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">JUN 2021 — SEP 2021</div>
+        <h3>Software Engineer Intern</h3>
+        <div class="company">San Diego Supercomputer Center</div>
+        <ul>
+          <li>Front-end developer for a social media web app — profile + feed</li>
+          <li>Sprint planning, wireframing, and agile collaboration</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">JUN 2019</div>
+        <h3>Machine Learning Intern</h3>
+        <div class="company">Hartnell Community College</div>
+        <ul>
+          <li>Trained ML models for facial and feature detection</li>
+          <li>Hands-on with TensorFlow and PyTorch on real datasets</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROJECTS ========== -->
+<section id="projects">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Selected work</span>
+      <h2 class="section-title">Recent projects.</h2>
+      <p class="section-subtitle">A small selection of things I've built.</p>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card large">
+        <div class="project-image project-1">
+          <div class="project-placeholder">
+            <img src="resources\bobots_bakery.png" alt="Bobots_Bakery" onerror="this.style.display='none'; this.parentElement.classList.add('photo-fallback');" />
+          </div>
+        </div>
+        <div class="project-overlay">
+          <div class="project-tag">Featured · Website</div>
+          <h3>Bobot's Bakery</h3>
+          <p>Reponsive website for at-home bakery business.</p>
+        </div>
+      </div>
+
+      <!--
+      <div class="project-card">
+        <div class="project-image project-2">
+          <div class="project-placeholder">📷</div>
+        </div>
+        <div class="project-overlay">
+          <div class="project-tag">Mobile · Android</div>
+          <h3>Snap Camera Features</h3>
+          <p>Auto-flash and UI updates shipped to 200M+ users.</p>
+        </div>
+      </div>-->
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section class="contact" id="contact">
+  <div class="reveal">
+    <span class="section-label">Let's work together</span>
+    <h2>Want to chat?</h2>
+    <p>I'm currently taking on freelance projects and open to career opportunities. Drop me an email to chat or request to see my detailed resume.</p>
+    <a href="mailto:kylejbatalla@gmail.com" class="btn btn-primary" style="font-size: 17px; padding: 16px 32px;">Send me an email →</a>
+
+    <div class="contact-info">
+      <a href="mailto:kylejbatalla@gmail.com" class="contact-item">kylejbatalla@gmail.com</a>
+      <a href="tel:8312352465" class="contact-item">(831) 235-2465</a>
+      <a href="https://www.linkedin.com/in/kylejbatalla/" target="_blank" class="contact-item">LinkedIn ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 Kyle Batalla · Built with care in Monterey Bay</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
