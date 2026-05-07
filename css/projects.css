@@ -9,7 +9,7 @@
 .card-link {
   display: block;
   text-decoration: none;
-  color: white;
+  color: inherit;
 }
 
 .project-card {
